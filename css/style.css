@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+ /* font import ettik.*/
+body{
+    font-size: 16px;
+    font-family:'Open Sans', sans-serif;
+    margin:0;
+    height: 1000px;
+
+}
+/*Taşıyıcı tanımladık.*/
+.container{
+    width: 90% ;
+    margin-left: auto;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;/*satırın yönlendirmesi yatay mı dikey mi olacak*/
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    background: rgba(255,255,255, 0.95);
+    box-shadow: 0px 0px 0px #ccc;
+}
+#logo a {
+    color:#000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing:0.2rem;
+    display: inline-flex;
+    padding: 13px;
+}
+#logo a hover {
+    background-color:#e5e5e5 ;
+}
+ 
+
+nav ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    color:#000;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 15px;
+}
+nav ul li a:hover {
+    background-color:#e5e5e5 ;
+}
+nav i{
+    margin-right: 5px;
+}
+#banner {
+    background:#000 url('../img/mac.jpeg');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    padding: 300px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    color: white;
+}
+#banner h1{
+    
+    margin-top: 100px;
+    font-weight: normal;
+    font-size: 3.5rem;
+
+}
+#banner p{
+    font-size:1.2rem;
+}
+#banner a{
+    padding: 15px 25px;
+    background:rgba(255,255,255, 0.95);
+    opacity: 0.9;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    display: inline-flex;
+    text-decoration: none;
+    color:#000;
+}
+#banner a:hover{
+    background: rgba(255,255,255, 1);
+}
