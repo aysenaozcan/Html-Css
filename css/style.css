@@ -1,96 +1,235 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
-
- /* font import ettik.*/
-body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body {
     font-size: 16px;
-    font-family:'Open Sans', sans-serif;
-    margin:0;
-    height: 1000px;
-
+    font-family: 'Open Sans', sans-serif;
+    margin:0px;
+    color:#333;
 }
-/*Taşıyıcı tanımladık.*/
-.container{
-    width: 90% ;
-    margin-left: auto;
-    margin-top: auto;
-    display: flex;
-    flex-direction: row;/*satırın yönlendirmesi yatay mı dikey mi olacak*/
+* {
+    box-sizing: border-box;
+}
+.tasiyici {
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: row wrap;
+    /*flex-flow: row wrap;*/
     justify-content: space-between;
     align-items: center;
 }
-
-header{
+header {
     position: fixed;
     top:0px;
     left:0px;
     width:100%;
-    background: rgba(255,255,255, 0.95);
-    box-shadow: 0px 0px 0px #ccc;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0px 0px 5px #ccc;
+    z-index:99;
+}
+#logo {
+    display:flex;
 }
 #logo a {
     color:#000;
-    text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing:0.2rem;
+    text-decoration:none;
+    font-size:1.2rem;
+    letter-spacing: 0.2rem;
     display: inline-flex;
-    padding: 13px;
+    padding:13px;
 }
-#logo a hover {
-    background-color:#e5e5e5 ;
+#logo a:hover {
+    background:#e5e5e5;
 }
- 
-
-nav ul{
-    list-style-type:none;
+nav {
+    
+}
+nav ul {
+    list-style-type: none;
     margin:0px;
     padding:0px;
-    display: flex;
-    align-items: center;
+    display:flex;
 }
-nav ul li a{
+nav a {
     color:#000;
-    text-decoration: none;
+    text-decoration:none;
     display: inline-flex;
-    padding: 15px;
+    padding:15px;
 }
-nav ul li a:hover {
-    background-color:#e5e5e5 ;
+nav a:hover {
+    background:#e5e5e5;
 }
-nav i{
-    margin-right: 5px;
+nav i {
+    margin-top:3px;
+    margin-right:7px;
 }
 #banner {
-    background:#000 url('../img/mac.jpeg');
+    background: #000 url('../img/mac.jpeg');
     background-size: cover;
     background-position: center;
     height:100vh;
-    padding: 300px;
-    padding-left: 50px;
-    box-sizing: border-box;
-    color: white;
+    padding-top:150px;
+    color:#fff;
 }
-#banner h1{
-    
-    margin-top: 100px;
+#banner h1 {
     font-weight: normal;
-    font-size: 3.5rem;
+    font-size:3.5rem;
+    width:100%;
+}
+#banner p {
+    font-size:1.2rem;
+    width:100%;
+}
+#banner a {
+    padding:15px 25px;
+    background: rgba(255,255,255,0.7);
+    margin-top:30px;
+    font-size:1.1rem;
+    display: inline-flex;
+    color:#000;
+    text-decoration: none;
+}
+#banner a:hover {
+    background:#d5d5d5;
+}
+.satir {
+    width:100%;
+}
+#about {
+    padding-top:6rem;
+    padding-bottom:4rem;
+    text-align: center;
+}
+#about h1 {
+    font-weight: normal;
+    margin-bottom:25px;
+}
+#about p {
+    margin-bottom:70px;
+    font-size:1.1rem;
+}
+.abtkutular {
+    display: flex;
+    margin: 0 -15px;
+}
+.abtkutu{
+    width:25%;
+    padding:0 15px;
+}
+.abtkutu i {
+    font-size:4rem;
+}
+.abtkutu h2 {
+    font-weight:normal;
+    font-size:1.12rem;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.abtkutu p {
+    font-size:0.93rem!important;
+    line-height:175%;
+}
+#contact {
+    padding-top:6rem;
+    padding-bottom:4rem;
+    text-align: center;
+    background-color:#f5f5f5;
+}
+#contact h1 {
+    font-weight: normal;
+    margin-bottom:25px;
+}
+#contact p {
+    margin-bottom:70px;
+    font-size:1.1rem;
+}
+.iltkutular {
+    display: flex;
+    margin: 0 -15px;
+    width:100%;
+}
+.iltkutu{
+    width:33.3333333333%;
+    padding:0 15px;
+}
+.iltkutu i {
+    font-size:2rem;
+    margin-right:15px;
+}
+.iltkutu span {
 
 }
-#banner p{
-    font-size:1.2rem;
+#contact form {
+    margin-top:50px;
+    text-align:left;
 }
-#banner a{
-    padding: 15px 25px;
-    background:rgba(255,255,255, 0.95);
-    opacity: 0.9;
-    margin-top: 30px;
-    font-size: 1.1rem;
-    display: inline-flex;
-    text-decoration: none;
+#contact input {
+    width:100%;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    font-size:1.05rem;
+    padding:10px;
+    outline:0;
+}
+#contact input::placeholder {
+    color:#bbb;
+}
+#contact button {
+    background-color: #000;
+    color:#fff;
+    font-size:0.95rem;
+    text-transform: uppercase;
+    border:0;
+    padding:10px 15px;
+    cursor:pointer;
+    margin-top:10px;
+}
+#contact button i {
+    margin-right:5px;
+}
+#contact button:hover {
+    background:#ccc;
     color:#000;
 }
-#banner a:hover{
-    background: rgba(255,255,255, 1);
+#contact img {
+    width:100%;
+    margin-top:80px;
+    filter:grayscale(70%);
+}
+footer {
+    padding-top:4rem;
+    padding-bottom:4rem;
+    text-align: center;
+    color:#fff;
+    background-color:#000;
+}
+footer a.up {
+    background:#eee;
+    padding:10px 13px;
+    font-size:0.95rem;
+    text-decoration: none;
+    color:#555;
+    margin-bottom:20px;
+    display:inline-flex;
+}
+footer a.up i {
+    margin-right:10px;
+}
+footer a.up:hover {
+    background:#ccc;
+}
+.smedya i {
+    margin:10px 5px;
+    font-size: 1.5rem;
+}
+.smedya i:hover {
+    color:#ccc;
+}
+.eii {
+    color:#fff;
+    text-decoration:none;
+    font-size:0.95rem;
+}
+.eii:hover {
+    color:#F00;
 }
