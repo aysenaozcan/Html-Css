@@ -1,5 +1,5 @@
 #HTML-CSS
-I wrote a web page with HTML CSS.
+I wrote a single page with HTML CSS.
 
 
 
